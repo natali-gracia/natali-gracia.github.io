@@ -5,8 +5,7 @@
 	<title>Shop-Layout</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -17,7 +16,7 @@
 						<a href=""><img src="images/logo.png" alt="logo"></a>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6-short">
 					<ul class="menu">
 						<li><a href="">Home</a></li>
 						<li class="dropdown-item">
@@ -60,9 +59,293 @@
 			</div>
 		</div>	
 	</header>
-		
-	<main class="main">main</main>
-	<footer class="footer">footer</footer>
-
+	<!-- dummy slider layout -->
+	<div class="main-slider">
+		<div class="container">
+			<div class="carousel-caption">Slider</div>
+		</div>
+	</div>	
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3-short">
+					<div class="sidebar">
+						<div class="checkbox">Checkbox</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="breadcrumbs">
+						<span><a href="#">Home page</a></span>
+						<span><a href="#">Products</a></span>																
+						<span class="active"><a href="#">Laptops and Tablets</a></span>
+					</div>
+					<div class="catalog-header">
+						<div class="col-md-6">
+							<div class="catalog-title">Laptops and Tablets</div> 
+						</div>
+						<div class="col-md-3">
+							<div class="catalog-setting">
+								<select class="select-box">
+									<option value="sort by price">sort by price</option>
+									<option value="sort by name">sort by name</option>
+									<option value="sort by date">sort by date</option>
+									<option value="sort by popularity">sort by popularity</option>
+								</select>							
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid"> 
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-17.png" alt="Device #1">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#1 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$599 <span>25</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-9.png" alt="Device #2">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#2 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$1250 <span>99</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-10.png" alt="Device #3">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#3 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$399 <span>50</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-16.png" alt="Device #1">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#1 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$599 <span>25</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-14.png" alt="Device #2">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#2 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$1250 <span>99</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-12.png" alt="Device #3">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#3 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$399 <span>50</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>																		
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-15.png" alt="Device #1">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#1 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$599 <span>25</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-9.png" alt="Device #2">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#2 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$1250 <span>99</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>
+						<div class="col-md-3">
+							<div class="goods-img">
+								<img class="lazyloaded-icon" src="images/icon-10.png" alt="Device #3">
+								<div class="btn-actions">
+									<div class="btn-scale"></div>
+									<div class="btn-wish"></div>									
+								</div>							
+							</div>
+							<div class="goods-tile">
+								<div class="goods-tile__text">
+									<h2 class="goods-tile__title">#3 Device Name</h2>
+									<p class="goods-tile__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<p class="goods-tile__descr"><span>TYPE: </span>Laptop</p>
+									<p class="goods-tile__descr"><span>Screen size: </span>7 inches</p>
+									<p class="goods-tile__descr"><span>RAM: </span>1GB</p>
+								</div>
+								<div class="goods-tile__price">
+									<p>$399 <span>50</span></p>
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__details-button">more details</button>		
+								</div>
+								<div class="goods-tile__button">
+									<button type="button" class="goods-tile__buy-button">Add to cart</button>
+								</div>
+							</div>											
+						</div>																								
+					</div>
+					<div class="col-md-9 more-goods-link">Load more ...</div>											
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-print">&copy; Copyright 2017</div>
+	</footer>
 </body>
 </html>
