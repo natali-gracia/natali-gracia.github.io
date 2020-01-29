@@ -27,7 +27,6 @@ footer {
 .main-contant:after, 
 .breadcrumbs:after, 
 .catalog-header:after, 
-.catalog-grid:after, 
 .goods-img:after {
 	content: "";
 	display: block;
@@ -335,13 +334,17 @@ footer {
 }
 .catalog-grid {
 	padding-top: 30px;
-}
-.catalog-grid .col-md-3 {
 	padding-left: 30px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.catalog-grid .col-md-3-short {
+	float: none;
 	padding-bottom: 30px;
 }
 .goods-img {
-	width: 270px;
 	height: 180px;
 	line-height: 180px;
 	text-align: center;
@@ -404,7 +407,6 @@ footer {
 	background-image: url(images/icon-7.png);
 }
 .goods-tile {
-	width: 270px;
 	height: 470px;
 	border: 1px solid #fff;
 	border-top: none;
