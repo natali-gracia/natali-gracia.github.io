@@ -25,8 +25,8 @@ console.log(addToFavorites);
 
 for (let i = 0;i<addToFavorites.length; i++) {
 	addToFavorites[i].addEventListener("click", function() {
-  		if (this.classList.contains("active")) {
-    		this.classList.remove("active");
-  			} else this.classList.add("active");
+  		if (this.classList.contains("liked")) {
+    		this.classList.remove("liked");
+  			} else this.classList.add("liked");
 	})
 }

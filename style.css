@@ -286,7 +286,7 @@ footer {
 	width: 28px;
 	height: 51px;
 }
-
+ 
 .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
@@ -515,7 +515,7 @@ input[type="checkbox"]:checked + label:before {
 .btn-scale:hover, .btn-wish:hover {
 	background-color: #2c71b8;
 }
-.active, .btn-wish:hover {
+.liked, .btn-wish:hover {
 	background-color: #2c71b8;
 }
 .btn-wish:after {
@@ -530,7 +530,7 @@ input[type="checkbox"]:checked + label:before {
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
 }
-.active:after, .btn-wish:hover:after {
+.liked:after, .btn-wish:hover:after {
 	background-image: url(images/icon-7.png);
 }
 .goods-tile {
