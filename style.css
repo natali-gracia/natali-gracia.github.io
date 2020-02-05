@@ -249,36 +249,44 @@ footer {
 	height: 400px;
 	line-height: 400px;
 }
-/*.slick-slider button:after {
-	background-image: url("images/icon 18-1.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 13px;
-	height: 8px;
-	display: block;
-	position: absolute;
-}*/
+
 .slick-prev {
     left: 0;
+}
+.slick-prev:before, .slick-next:before {
+	content: "";
+}
+.slick-prev:after {
+	background-image: url("images/arrow left.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	width: 28px;
+	height: 51px;
+	display: block;
+	position: absolute;
+	top: 0;
 }
 .slick-next {
     right: 0;
 }
+.slick-next:after {
+	background-image: url("images/arrow right.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	width: 28px;
+	height: 51px;
+	display: block;
+	position: absolute;
+	top: 0;
+}
 .slick-prev, .slick-next {
 	z-index: 10;
-	width: 30px;
-	height: 50px;
+	width: 28px;
+	height: 51px;
 }
-.slick-prev:before, .slick-next:before {
-	opacity: inherit;
-	font-size: 50px;
-}
-.slick-prev:before {
-    content: '<';
-}
-.slick-next:before {
-    content: '>';
-}
+
 .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
