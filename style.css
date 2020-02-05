@@ -13,7 +13,7 @@ header {
 footer {
 	background-color: rgba(255, 255, 255, 0.75);
 }
-.main-slider {
+.slider-block {
 	background-color: rgba(0, 0, 0, 0.2);
 	border-top: 1px solid #fff;
   	border-bottom: 1px solid #fff;
@@ -99,6 +99,7 @@ footer {
 }
 .menu li:hover .dropdown-menu {
 	display: block;
+	z-index: 5;
 }
 .dropdown-menu li {
 	float: none;
@@ -231,7 +232,6 @@ footer {
   	top: -10px;
   	right: 30px;
 }
-/*dummy slider layout*/
 .carousel-caption {
 	height: 400px;
 	line-height: 400px;
@@ -241,6 +241,75 @@ footer {
 	font-size: 100px;
 	text-align: center;
 }
+.slick div {
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+	font-size: 100px;
+	height: 400px;
+	line-height: 400px;
+}
+/*.slick-slider button:after {
+	background-image: url("images/icon 18-1.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 13px;
+	height: 8px;
+	display: block;
+	position: absolute;
+}*/
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev, .slick-next {
+	z-index: 10;
+	width: 30px;
+	height: 50px;
+}
+.slick-prev:before, .slick-next:before {
+	opacity: inherit;
+	font-size: 50px;
+}
+.slick-prev:before {
+    content: '<';
+}
+.slick-next:before {
+    content: '>';
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+	padding: 5px;
+}
+.slick-dots li button {
+	width: 10px;
+  	height: 10px;
+  	padding: 0;
+	border: 1px solid #fff;
+	list-style: square;
+}
+.slick-dots li.slick-active button {
+	background-color: #fff;
+}
+.slick-dots li button:before {
+	content: none;
+}
+/*!important - якщо стилі бібліотеки внутрішні, щоб їх перебити своїми - додаємо імпортант*/
+
 .sidebar {
 	background-color: rgba(255, 255, 255, 0.2);
   	border-right: 1px solid #fff;
@@ -330,7 +399,7 @@ input[type="checkbox"]:checked + label:before {
 	font-size: 14px;
 	color: rgba(255, 255, 255, 0.5);
 }
-.breadcrumbs .active a {
+.breadcrumbs .active-item a {
 	text-decoration: underline;
 	padding: 0;
 }
@@ -366,10 +435,6 @@ input[type="checkbox"]:checked + label:before {
 .select-box::-ms-expand { 
     display: none;
 }
-/*.select-box option:checked {
-	background-color: #fff;
-	color: #2c71b8;
-}*/
 .catalog-setting:after {
 	background: url(images/dropdown-item-hover.png);
 	background-repeat: no-repeat;
@@ -442,6 +507,9 @@ input[type="checkbox"]:checked + label:before {
 .btn-scale:hover, .btn-wish:hover {
 	background-color: #2c71b8;
 }
+.active, .btn-wish:hover {
+	background-color: #2c71b8;
+}
 .btn-wish:after {
 	background-image: url(images/icon-5.png);
 	background-repeat: no-repeat;
@@ -454,7 +522,7 @@ input[type="checkbox"]:checked + label:before {
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
 }
-.btn-wish:hover:after {
+.active:after, .btn-wish:hover:after {
 	background-image: url(images/icon-7.png);
 }
 .goods-tile {
