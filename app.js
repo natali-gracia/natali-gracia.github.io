@@ -68,4 +68,12 @@ function disableEnableButtons(count,a) {
       }
   } 
 
+// Selector - Selectize Library - https://selectize.github.io/selectize.js/
+
+$('#select-beast').selectize({
+    create: true,
+    sortField: 'text',
+    hideSelected: true,
+});
+
 
